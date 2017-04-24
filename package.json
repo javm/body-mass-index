@@ -1,0 +1,45 @@
+{
+  "name": "body-mass-index",
+  "version": "1.0.0",
+  "description": "TangoSource - Body Mass Index",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha app.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javm/body-mass-index.git"
+  },
+  "keywords": [
+    "Body Mass Index"
+  ],
+  "author": "Jose A. Villarreal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javm/body-mass-index/issues"
+  },
+  "homepage": "https://github.com/javm/body-mass-index#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "jade": "^1.11.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.9.5",
+    "morgan": "^1.8.1",
+    "nconf": "^0.8.4",
+    "node-rest-client": "^3.0.7",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.2.0",
+    "superagent": "^3.5.2"
+  }
+}
