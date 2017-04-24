@@ -5,7 +5,7 @@ var Promise = require('bluebird');
 var mongoose = require('mongoose');
 var logger = require('morgan');
 var path = require('path');
-var validator = require('validator');
+
 
 var config = require('./config');
 var User = require('./models/user');
