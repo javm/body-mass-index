@@ -11,7 +11,7 @@ Dependencies
 - Node.js v6.3.0
 See package.js
 
-Istall
+Install
 ======
 npm install && npm start
 
