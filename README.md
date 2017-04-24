@@ -20,3 +20,4 @@ Test
 1. Start the server in one terminal
 `npm start`
 2. Run `npm test` in another terminal
+3. Go to localhost:3000/bmi
