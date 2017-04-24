@@ -47,14 +47,20 @@ module.exports = function(passport){
     res.render('home', { user: req.user });
   });
 
+  router.get('/bmi', isAuthenticated, function(req, res){
+    res.render('home', { user: req.user });
+  });
+  
   /* POST BMI */
   router.post('/bmi', isAuthenticated, function(req, res){
     var height = req.param('height');
     var weight = req.param('weight');
     var bmiObj = new bmi(height, weight);
     bmiObj.calculate();
-    console.log(bmiObj.height, bmiObj.weight,bmiObj.bmi);
-    res.render('home', {user: req.user, message: `BMI ${bmiObj.bmi}`});
+    if(bmiObj.height < 0 ||  bmiObj.weight < 0){
+      return res.render('home', {user: req.user, message: `Your data is wrong: wight and heigh must be above 0`});
+    }
+    res.render('home', {user: req.user, message: `BMI:${bmiObj.bmi} Category:${bmiObj.category()}`});
     
   });
   /* Handle Logout */
